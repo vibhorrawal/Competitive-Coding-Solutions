@@ -41,8 +41,7 @@ import random
 import re
 import sys
 
-# Complete the triplets function below.
-
+# Complete the triplets function below
 def triplets(a, b, c):
     a = list(sorted(set(a)))
     b= list(sorted(set(b)))
@@ -50,7 +49,6 @@ def triplets(a, b, c):
     an = 0
     bn = 0
     cn = 0
-    
     ans = 0
     
     while bn < len(b):
@@ -62,7 +60,6 @@ def triplets(a, b, c):
         
         ans += an * cn
         bn += 1
-    
     return ans
 
 if __name__ == '__main__':
@@ -87,4 +84,3 @@ if __name__ == '__main__':
     fptr.write(str(ans) + '\n')
 
     fptr.close()
-
