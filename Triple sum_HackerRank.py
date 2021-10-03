@@ -49,7 +49,7 @@ def triplets(a, b, c):
     an = 0
     bn = 0
     cn = 0
-    ans = 0
+    res = 0
     
     while bn < len(b):
         while an < len(a) and a[an] <= b[bn]:
@@ -58,9 +58,9 @@ def triplets(a, b, c):
         while cn < len(c) and c[cn] <= b[bn]:
             cn += 1
         
-        ans += an * cn
+        res += an * cn
         bn += 1
-    return ans
+    return res
 
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
