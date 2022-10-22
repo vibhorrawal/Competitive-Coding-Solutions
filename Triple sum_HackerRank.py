@@ -65,13 +65,7 @@ def triplets(a, b, c):
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
 
-    lenaLenbLenc = input().split()
-
-    lena = int(lenaLenbLenc[0])
-
-    lenb = int(lenaLenbLenc[1])
-
-    lenc = int(lenaLenbLenc[2])
+    len_a, len_b, len_c = input().split()
 
     arra = list(map(int, input().rstrip().split()))
 
