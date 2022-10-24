@@ -9,7 +9,8 @@ import sys
 # Complete the maxMin function below.
 def maxMin(k, arr):
     ans = 10**9
-    arr_s = sorted(arr)
+    arr_s = arr
+    arr_s.sort()
     for i in range(len(arr) - k + 1):
         sub_arr_min = arr_s[i]
         sub_arr_max = arr_s[i+k-1]
